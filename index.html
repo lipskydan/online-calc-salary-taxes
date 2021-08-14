@@ -9,39 +9,73 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div class="container">
-            
-            <div class="card" style="width: 50%; margin-left: 25%; margin-top: 2%">
-                <div class="card-body">
-                    <h1 class="card-title" style="text-align: center">Calculate Taxes</h1>
+
+        <form name="mainForm">
+            <div class="container">
+     
+                <div class="card" style="width: 50%; margin-left: 25%; margin-top: 2%">
+                    <div class="card-body">
+                        <h1 class="card-title" style="text-align: center">Онлайн калькулятор</h1>
+                    </div>
                 </div>
 
-                <table class="table" style="width: 95%; align-self: center;">
-                    <tr>
-                        <td style="width: 70%;">Сумма которая зашла на расчетный счет: </td>
-                        <td style="width: 30%;">
-                            <input type="text" class="form-control" id="total" value="0" style="width: 100%;">
-                        </td>
-                    </tr>
+                <div class="card" style="width: 50%; margin-left: 25%; margin-top: 2%">
+                    <div class="card-body">
+                        <table style="width: 100%;" border="0">
+                            <tr>
+                                <td style="width: 55%;"><p class="card-text">Сумма которая зашла на расчетный счет: </p></td>
+                                <td><input type="number" class="form-control" id="newInCome" value="0" style="width: 95%;" required></td>
+                                <td>UAH</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="2"> 
+                                    <p id="warningInfo" style="text-align: center; color:red;"></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
 
-                    <tr>
-                        <td>Налог 5% от указанной суммы: </td>
-                        <td>
-                            <input type="text" class="form-control" id="tax_five" value="0" style="width: 100%;" disabled>
-                        </td>
-                    </tr>
+                <div class="card" style="width: 50%; margin-left: 25%; margin-top: 2%">
+                    <div class="card-body">
+                        <table class="table" style="width: 95%; align-self: center;">
+                            <tr>
+                                <td>Налог 5% от указанной суммы: </td>
+                                <th id="tax_five">0</th>
+                                <th style="width: 5%;">UAH</th>
+                            </tr>
+                            <tr>
+                                <td>Единый социальный взнос: </td>
+                                <th id="esv"></th>
+                                <th style="width: 5%;">UAH</th>                    
+                            </tr>
+                            <!-- <tr>
+                                <td>Дополнительные траты: </td>
+                                <th>0</th>
+                                <th style="width: 5%;">UAH</th>                    
+                            </tr> -->
+                        </table>
+                    </div>
+                </div>
 
-                    <tr>
-                        <td>Единый социальный взнос: </td>
-                        <td>
-                            <input type="text" class="form-control" id="esv" value="1320" style="width: 100%;" disabled>
-                        </td>
-                    </tr>
-                </table>
+                <div class="card" style="width: 50%; margin-left: 25%; margin-top: 2%">
+                    <div class="card-body">
+                        <table class="table" style="width: 95%; align-self: center;">
+                            <tr>
+                                <td>Доступная сумма для перевода:</td>
+                                <th id="clearMoney">0</th>
+                                <th style="width: 5%;">UAH</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+    
+                    
             </div>
-            
-        </div>
-        
-        <script src="" async defer></script>
+        </form>
+
+        <script src="app.js"></script>
     </body>
 </html>

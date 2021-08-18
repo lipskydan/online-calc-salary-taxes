@@ -10,7 +10,6 @@ form.newInCome.oninput = calcTaxes;
 countFivePerCentTaxes = (total) => (total*5)/100;
 
 showWarningMassage = () => document.getElementById('warningInfo').innerHTML = "Зашла сумма меньше минималки";
-
 hideWarningMassage = () => document.getElementById('warningInfo').innerHTML = "";
 
 function calcTaxes(){

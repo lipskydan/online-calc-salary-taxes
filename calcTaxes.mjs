@@ -1,10 +1,11 @@
-import {ESV as esv, MIN_SALARY as m_s, EXTRA_EXPENSE as e_e} from './modules/staticData.mjs'
+import { ESV } from "./modules/staticData.mjs";
+
 
 class calcTaxes {
 
-    static ESV = () => esv;
-    static MIN_SALARY = () => m_s;
-    static EXTRA_EXPENSE = () => e_e;
+    static ESV = () => 1350;
+    static MIN_SALARY = () => 5000;
+    static EXTRA_EXPENSE = () => 100;
 
     constructor(newInCome){
         // this.inCome = +form.newInCome.value;
@@ -16,12 +17,12 @@ class calcTaxes {
     run(){
         if(this.inCome === 0 || !this.inCome)  return;
     
-        if(this.inCome < MIN_SALARY()){
+        if(this.inCome < this.MIN_SALARY){
             return;
         }
         
-        this.tax_five = countFivePerCentTaxes(this.inCome);
-        this.clearMoney = this.inCome - countFivePerCentTaxes(this.inCome) - ESV();
+        this.tax_five = this.countFivePerCentTaxes(this.inCome);
+        this.clearMoney = this.inCome - this.tax_five - this.ESV();
     }
 
     info(){
@@ -31,5 +32,5 @@ class calcTaxes {
 
 
 let a = new calcTaxes(10000);
-a.run;
-a.info;
+a.run();
+a.info();

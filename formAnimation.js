@@ -1,0 +1,2 @@
+export function showWarningMassage () { document.getElementById('warningInfo').innerHTML = "Зашла сумма меньше минималки"; }
+export function hideWarningMassage () { document.getElementById('warningInfo').innerHTML = ""; }

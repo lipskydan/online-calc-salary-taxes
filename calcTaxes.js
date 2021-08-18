@@ -1,17 +1,22 @@
-export {ESV, MIN_SALARY, EXTRA_EXPENSE} from './staticData.js'
-
+import {ESV, MIN_SALARY, EXTRA_EXPENSE} from './staticData.js'
+import {showWarningMassage, hideWarningMassage} from './formAnimation.js'
 class calcTaxes {
 
     static ESV = () => this.ESV;
     static MIN_SALARY = () => this.MIN_SALARY;
     static EXTRA_EXPENSE = () => this.EXTRA_EXPENSE;
 
-    constructor(inCome){
-        this.inCome = inCome;
+    constructor(form){
+        // this.inCome = inCome;
+        this.inCome = +form.newInCome.value;
     }
 
+    countFivePerCentTaxes = (total) => (total*5)/100;
+
+    
+
     run(){
-        let newInCome = +form.newInCome.value;
+        // let newInCome = +form.newInCome.value;
     
         if(newInCome === 0 || !newInCome)  return;
     

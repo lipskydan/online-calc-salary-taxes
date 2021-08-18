@@ -1,0 +1,5 @@
+const ESV = 1320;
+const MIN_SALARY = 6000;
+const EXTRA_EXPENSE = 100;
+
+export {ESV, MIN_SALARY, EXTRA_EXPENSE};

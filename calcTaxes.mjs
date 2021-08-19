@@ -1,4 +1,4 @@
-export class calcTaxes {
+class calcTaxes {
 
     constructor(newInCome){
         // this.inCome = +form.newInCome.value;

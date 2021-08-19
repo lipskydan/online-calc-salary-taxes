@@ -1,6 +1,6 @@
-import calcTaxes from './calcTaxes.mjs'
+// import calcTaxes from './calcTaxes.mjs'
 
-let a = new calcTaxes(10000);
+// let a = new calcTaxes(10000);
 
 // let form = document.forms.mainForm;
 
@@ -45,5 +45,17 @@ let a = new calcTaxes(10000);
 // }
 
 // calcTaxes();
+
+
+const express = require('express')
+const mongoose = require('mongoose')
+
+const PORT = process.env.PORT || 3000
+
+const app = express()
+
+app.listen(PORT, () => {
+    console.log("Server started...")
+})
 
 

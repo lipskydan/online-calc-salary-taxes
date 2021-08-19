@@ -1,4 +1,6 @@
-// import calcTaxes from './calcTaxes'
+import calcTaxes from './calcTaxes.mjs'
+
+let a = new calcTaxes(10000);
 
 // let form = document.forms.mainForm;
 

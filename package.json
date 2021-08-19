@@ -1,0 +1,19 @@
+{
+  "name": "online-calc-salary-taxes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lipskydan/online-calc-salary-taxes.git"
+  },
+  "author": "Lipsky Danial",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lipskydan/online-calc-salary-taxes/issues"
+  },
+  "homepage": "https://github.com/lipskydan/online-calc-salary-taxes#readme"
+}
